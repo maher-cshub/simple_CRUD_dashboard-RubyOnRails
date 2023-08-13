@@ -1,4 +1,5 @@
 class Dashboard2Controller < ApplicationController
+
   # GET /products or /products.json
   def index
     @products = Product.all
