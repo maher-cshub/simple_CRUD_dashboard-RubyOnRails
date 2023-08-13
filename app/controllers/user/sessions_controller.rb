@@ -2,6 +2,7 @@
 
 class User::SessionsController < Devise::SessionsController
   # before_action :configure_sign_in_params, only: [:create]
+  prepend_view_path "app/views/devise"
 
   # GET /resource/sign_in
   # def new
@@ -13,10 +14,12 @@ class User::SessionsController < Devise::SessionsController
   #   super
   # end
 
+=begin
   DELETE /resource/sign_out
   def destroy
     super
   end
+=end
 
   # protected
 
