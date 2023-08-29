@@ -6,64 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ecaa8bc4-b2e3-4ffe-b6ac-12466c198fa9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/confirmations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/devise/confirmations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/omniauth_callbacks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/devise/omniauth_callbacks_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/passwords_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/devise/passwords_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/devise/registrations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/devise/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/unlocks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/devise/unlocks_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/dashboard2_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/dashboard2_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user/products_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user/confirmations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user/devise/confirmations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user/omniauth_callbacks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user/devise/omniauth_callbacks_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user/passwords_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user/devise/passwords_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user/devise/registrations_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user/devise/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user/unlocks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user/devise/unlocks_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard2/_footer.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard2/_footer.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard2/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard2/_navbar.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard2/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard2/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard2/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard2/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/confirmations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/confirmations/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/mailer/confirmation_instructions.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/mailer/confirmation_instructions.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/mailer/email_changed.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/mailer/email_changed.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/mailer/password_change.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/mailer/password_change.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/mailer/reset_password_instructions.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/mailer/reset_password_instructions.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/mailer/unlock_instructions.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/mailer/unlock_instructions.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/passwords/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/passwords/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/passwords/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/passwords/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/registrations/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/registrations/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/sessions/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/shared/_error_messages.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/shared/_error_messages.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/shared/_links.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/shared/_links.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/admins/unlocks/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/devise/admins/unlocks/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/confirmations/new.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/mailer/confirmation_instructions.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/mailer/email_changed.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/mailer/password_change.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/mailer/reset_password_instructions.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/mailer/unlock_instructions.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/passwords/edit.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/passwords/new.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/registrations/edit.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/registrations/new.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/sessions/new.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/shared/_error_messages.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/shared/_links.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/users/unlocks/new.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/products/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/products/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/products/_product.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/products/_product.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/products/_product.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/products/_product.json.jbuilder" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/products/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/products/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/products/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/products/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/products/index.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/products/index.json.jbuilder" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/products/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/products/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/products/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/products/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/products/show.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/user/products/show.json.jbuilder" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230806111953_create_products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230806111953_create_products.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +45,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/maher/dashboard1/app/views/user&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/maher/Desktop/rails_platform_intern&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -220,6 +163,10 @@
       <workItem from="1691916602350" duration="16075000" />
       <workItem from="1691940011995" duration="840000" />
       <workItem from="1692251470133" duration="753000" />
+      <workItem from="1693297109255" duration="1067000" />
+      <workItem from="1693298223240" duration="10000" />
+      <workItem from="1693298277718" duration="20000" />
+      <workItem from="1693300734299" duration="533000" />
     </task>
     <servers />
   </component>
