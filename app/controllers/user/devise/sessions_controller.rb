@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
-class Admin::SessionsController < Devise::SessionsController
+class User::Devise::SessionsController < Devise::SessionsController
   # before_action :configure_sign_in_params, only: [:create]
+  prepend_view_path "app/views/user/devise"
+
 
   # GET /resource/sign_in
   # def new
@@ -13,10 +15,12 @@ class Admin::SessionsController < Devise::SessionsController
   #   super
   # end
 
-  # DELETE /resource/sign_out
-  # def destroy
-  #   super
-  # end
+=begin
+  DELETE /resource/sign_out
+  def destroy
+    super
+  end
+=end
 
   # protected
 

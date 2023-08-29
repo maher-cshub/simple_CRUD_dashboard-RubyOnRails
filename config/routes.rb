@@ -1,16 +1,17 @@
 Rails.application.routes.draw do
-  get 'welcome/new'
-  get 'welcome/create'
-  devise_for :admins, controllers: {registrations:'user/registrations', sessions: "user/sessions"}
+
+  devise_for :admins, controllers: {registrations:'admin/devise/registrations', sessions: "admin/devise/sessions"}
   # devise_for :users
-  devise_for :users, controllers: {registrations:'user/registrations', sessions: "user/sessions"}
-  resources :products
-  resources :dashboard2
+  devise_for :users, controllers: {registrations:'user/devise/registrations', sessions: "user/devise/sessions"}
 
   namespace :admin do
     resources :dashboard2
-    resources :products
     root to: "dashboard2#index"
+  end
+
+  namespace :user do
+    resources :products
+    root to: "products#index"
   end
 
 

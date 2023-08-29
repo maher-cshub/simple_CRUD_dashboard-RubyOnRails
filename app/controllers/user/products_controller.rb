@@ -1,4 +1,5 @@
-class Dashboard2Controller < ApplicationController
+class User::ProductsController < ApplicationController
+  before_action :set_product, only: %i[ show edit update destroy ]
 
   # GET /products or /products.json
   def index
@@ -57,22 +58,13 @@ class Dashboard2Controller < ApplicationController
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_product
-    @product = Product.find(params[:id])
-  end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_product
+      @product = Product.find(params[:id])
+    end
 
-  # Only allow a list of trusted parameters through.
-  def product_params
-    params.require(:product).permit(:name, :product_type, :image)
-  end
-
-
-  def navbar
-
-  end
-
-  def settings
-
-  end
+    # Only allow a list of trusted parameters through.
+    def product_params
+      params.require(:product).permit(:name, :product_type, :image)
+    end
 end

@@ -766,45 +766,59 @@
                 </div>
               </form>
             </li>
-            <li>
-              <a href="/" class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700" data-turbo="false">
-                <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
-                  <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
-                </svg>
-                <span class="ml-3" sidebar-toggle-item="">Dashboard</span>
-              </a>
-            </li>
-            <li>
-              <%= link_to new_product_path, class: "flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700" do %>
-                <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                </svg>
-                <span class="ml-3" sidebar-toggle-item="">Add Product</span>
+
+            <% if admin_signed_in? %>
+
+              <li>
+                <a href="/" class="flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700" data-turbo="false">
+                  <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                    <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                  </svg>
+                  <span class="ml-3" sidebar-toggle-item="">Dashboard</span>
+                </a>
+              </li>
+
+              <li>
+                <%= link_to new_user_product_path, class: "flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700" do %>
+                  <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                  </svg>
+                  <span class="ml-3" sidebar-toggle-item="">Add Product</span>
+                <% end %>
+              </li>
+
+              <li>
+                <%= link_to destroy_user_session_path, class: "flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700" do %>
+                  <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                  </svg>
+                  <span class="ml-3 sidebar-toggle-item=">Log out</span>
+                <% end %>
+              </li>
+
+              <% else %>
+
+              <li>
+                <%= link_to new_user_registration_path, class: "flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700" do %>
+                  <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                  </svg>
+                  <span class="ml-3 sidebar-toggle-item=">Register</span>
+                <% end %>
+              </li>
+
+              <li>
+                <%= link_to new_user_session_path, class: "flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700" do %>
+                  <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                  </svg>
+                  <span class="ml-3 sidebar-toggle-item=">Login</span>
+                <% end %>
+              </li>
+
               <% end %>
-            </li>
-            <li>
-              <%= link_to new_user_registration_path, class: "flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700" do %>
-                <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                </svg>
-                <span class="ml-3" sidebar-toggle-item="">Register</span>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to new_user_session_path, class: "flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700" do %>
-                <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                </svg>
-                <span class="ml-3" sidebar-toggle-item="">Login</span>
-              <% end %>
-              <%= link_to destroy_user_session_path, class: "flex items-center p-2 text-base text-gray-900 rounded-lg hover:bg-gray-100 group dark:text-gray-200 dark:hover:bg-gray-700" do %>
-                <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                </svg>
-                <span class="ml-3" sidebar-toggle-item="">Login</span>
-              <% end %>
-            </li>
+
           </ul>
         </div>
       </div>
@@ -851,8 +865,8 @@
             <%= product.price %> Da
           </td>
           <td class="px-6 py-4 text-right">
-            <%= link_to "Edit", edit_dashboard2_path(product) , method: :put, class: "mx-2 font-medium text-blue-600 dark:text-blue-500 hover:underline" %>
-            <%= button_to "Remove", product, method: :delete, class: "mx-2 font-medium text-red-600 dark:text-red-500 hover:underline" %>
+            <%= link_to "Edit", edit_user_product_path(product) , method: :put, class: "mx-2 font-medium text-blue-600 dark:text-blue-500 hover:underline" %>
+            <%= button_to "Remove", user_product_path(product), method: :delete, class: "mx-2 font-medium text-red-600 dark:text-red-500 hover:underline" %>
           </td>
         </tr>
       <% end %>
